@@ -1,0 +1,385 @@
+/******************** Global Styles ********************/
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Consistent Padding Across All Sections */
+.container-fluid {
+    padding-left: 150px;  
+    padding-right: 150px; 
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+
+
+
+/******************** Banner Section ********************/
+
+/* Banner Section with Navbar Background */
+.banner-section {
+    position: relative;
+}
+.index-banner {
+    background: url('../images/home-banner.png') no-repeat center center/cover;
+    height: 800px; /* Adjust height to fit both navbar and banner */
+}
+
+.about-banner {
+    background: url('../images/shake-hands-img.jpg') no-repeat center center/cover;
+    height: 500px; /* Adjust height to fit both navbar and banner */
+}
+
+.contact-banner {
+    background: url('../images/meeting-img.jpg') no-repeat center center/cover;
+    background-position: top center;
+    height: 500px; /* Adjust height to fit both navbar and banner */
+}
+
+/* Semi-transparent Overlay */
+.overlay {
+    position: absolute;
+    top: 90px; /* Overlay just below the navbar */
+    left: 0;
+    right: 0;
+    height: calc(100% - 90px); /* Fills the remaining space below the navbar */
+    background-color: rgba(21, 50, 90, 0.8);
+    z-index: 0; /* Overlay is below the text */
+}
+
+.banner-content {
+    position: absolute;
+    z-index: 2; /* Text is above the overlay */
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    width: 80%;
+}
+
+.banner-content p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+.index-banner-content {
+    position: absolute;
+    z-index: 2; /* Text is above the overlay */
+    top: 40%;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    color: #ffffff;
+    width: 80%;
+    padding-left: 150px;
+}
+
+.index-banner-content .highlight {
+    color: #D8C26C;
+}
+
+/* Style for the banner button */
+.index-banner-content .banner-cta-btn {
+    background-color: #d8c26c;
+    font-weight: 500;
+    color: #15325A;
+    border: none;
+    border-radius: 4px; 
+    padding: 10px 60px; 
+    font-size: 20px; 
+    cursor: pointer; 
+    margin-top: 20px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+/* Hover and Active State */
+.index-banner-content .banner-cta-btn:hover,
+.index-banner-content .banner-cta-btn:active {
+    background-color: white; 
+    color: #15325A; 
+    
+}
+
+
+
+
+/******************** Navbar Styles ********************/
+.custom-navbar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+    background-color: rgba(21, 50, 90, 0.65);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 15px 0;
+}
+
+.custom-navbar .navbar-brand {
+    font-family: 'Abhaya Libre', serif;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.custom-navbar .navbar-nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.custom-navbar .nav-link {
+    font-family: 'Abhaya Libre', serif;
+    /*font-size: 18px;*/
+    font-weight: bold;
+    color: #ffffff;
+    padding: 8px 0;  
+    margin-right: 20px;
+    text-align: center;
+    width: 100px; /* Fixed width for all links */
+    position: relative;
+    border-radius: 4px;
+    
+}
+
+/* Hover and Active State */
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link:focus {
+    background-color: #ffffff;
+    color: rgba(21, 50, 90, 1);
+    border-radius: 4px;
+}
+
+/* Active link remains highlighted */
+.custom-navbar .nav-link.active {
+    background-color: #ffffff;
+    color: rgba(21, 50, 90, 1);
+    border-radius: 4px;
+}
+
+/* Remove extra margin for the last link to align with the right edge */
+.custom-navbar .navbar-nav .nav-item:last-child {
+    margin-right: 0;
+}
+
+
+
+
+/******************** Home Page ********************/
+
+
+
+
+
+/******************** Contact Page ********************/
+
+
+
+
+
+/******************** Footer Section ********************/
+.footer-section {
+    background-color: #15325A;
+    color: #ffffff;
+    padding: 40px 0 10px 0;
+    font-size: 14px;
+    position: relative;
+    /*z-index: 0;*/
+}
+
+/* Footer Content as Flex Container */
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Equal spacing between columns */
+    flex-wrap: wrap; /* Columns wrap on smaller screens */
+}
+
+.footer-section .container-fluid {
+    margin-top: 40px;
+}
+
+/* Footer Logo */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logo-initial {
+    height: 50px;
+    margin-right: 15px; /* Space between logos */
+}
+
+.logo-fullname {
+    height: 50px;
+}
+
+/* Company Information Section */
+.company-info {
+    width: 35%;
+    margin-right: 80px; /* Gap between company details and link columns */
+}
+
+.company-details {
+    list-style: none;
+    padding: 0;
+}
+
+.company-details li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.company-details i {
+    margin-right: 20px;
+    color: #D8C26C;
+}
+
+.company-details li:first-child {
+    align-items: flex-start; /* Align at the top */
+    padding-top: 4px;
+}
+
+.company-details li:first-child i {
+    margin-top: 5px;
+}
+
+/* Footer Links Section */
+.footer-links {
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.footer-header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #D8C26C;
+    margin-bottom: 40px; /* Gap between header and links */
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 20px;
+}
+
+.footer-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #D8C26C;
+}
+
+/* Column Width Adjustments */
+.company-links {
+    width: 10%; 
+
+}
+
+.services-links {
+    width: 20%; 
+}
+
+.support-links {
+    width: 10%; 
+    margin-right: 40px;
+}
+
+/* Horizontal line for separation */
+.footer-line {
+    border-top: 1px solid rgba(255, 255, 255, 0.35);
+    margin: 20px 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding-top: 0;
+}
+
+.footer-bottom-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-align: left;
+}
+
+
+
+
+/******************** Responsive Adjustments ********************/
+
+@media (max-width: 1240px) {
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .company-info {
+        width: 100%; 
+        margin-bottom: 40px; 
+    }
+
+    .footer-links {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .company-links {
+        width: 20%; 
+    
+    }
+    
+    .services-links {
+        width: 35%; 
+    }
+    
+    .support-links {
+        width: 40%; 
+    }
+
+    .container-fluid {
+        padding-left: 100px; 
+        padding-right: 100px; 
+    }
+}
+
+@media (max-width: 900px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .company-info, .company-links, .services-links, .support-links {
+        width: 100%; /* Stack columns on smaller screens */
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .container-fluid {
+        padding-left: 40px;  
+        padding-right: 40px; 
+    }
+    
+}
+
+
