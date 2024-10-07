@@ -18,32 +18,28 @@ body {
 h1 {
     font-family: 'Abhaya Libre', serif;
     font-weight: 700;
-    font-size: 3rem;
 }
 
 
 
-
 /******************** Banner Section ********************/
-
-/* Banner Section with Navbar Background */
 .banner-section {
     position: relative;
 }
 .index-banner {
     background: url('../images/home-banner.png') no-repeat center center/cover;
-    height: 800px; /* Adjust height to fit both navbar and banner */
+    height: 800px; 
 }
 
 .about-banner {
     background: url('../images/shake-hands-img.jpg') no-repeat center center/cover;
-    height: 500px; /* Adjust height to fit both navbar and banner */
+    height: 500px; 
 }
 
 .contact-banner {
     background: url('../images/meeting-img.jpg') no-repeat center center/cover;
     background-position: top center;
-    height: 500px; /* Adjust height to fit both navbar and banner */
+    height: 500px; 
 }
 
 /* Semi-transparent Overlay */
@@ -91,7 +87,6 @@ h1 {
     color: #D8C26C;
 }
 
-/* Style for the banner button */
 .index-banner-content .banner-cta-btn {
     background-color: #d8c26c;
     font-weight: 500;
@@ -105,15 +100,12 @@ h1 {
     transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
-/* Hover and Active State */
 .index-banner-content .banner-cta-btn:hover,
 .index-banner-content .banner-cta-btn:active {
     background-color: white; 
     color: #15325A; 
     
 }
-
-
 
 
 /******************** Navbar Styles ********************/
@@ -145,13 +137,6 @@ h1 {
     z-index: 999;
 }
 
-.custom-navbar .navbar-brand {
-    font-family: 'Abhaya Libre', serif;
-    font-weight: bold;
-    color: #ffffff;
-    font-size: 1.5rem;
-}
-
 .custom-navbar .navbar-nav {
     margin-left: auto;
     display: flex;
@@ -159,10 +144,9 @@ h1 {
 }
 
 .custom-navbar .nav-link {
-    font-family: 'Abhaya Libre', serif;
-    /*font-size: 18px;*/
     font-weight: bold;
     color: #ffffff;
+    letter-spacing: 0.05em;
     padding: 8px 0;  
     margin-right: 20px;
     text-align: center;
@@ -172,16 +156,8 @@ h1 {
     
 }
 
-/* Hover and Active State */
 .custom-navbar .nav-link:hover,
 .custom-navbar .nav-link:focus {
-    background-color: #ffffff;
-    color: rgba(21, 50, 90, 1);
-    border-radius: 4px;
-}
-
-/* Active link remains highlighted */
-.custom-navbar .nav-link.active {
     background-color: #ffffff;
     color: rgba(21, 50, 90, 1);
     border-radius: 4px;
@@ -194,8 +170,186 @@ h1 {
 
 
 
-
 /******************** Home Page ********************/
+
+
+
+
+
+
+/******************** About Page ********************/
+/* First About Section */
+.about-content-section {
+    padding: 100px 150px;
+}
+
+.about-content-section .subheading {
+    font-size: 16px;
+    letter-spacing: 0.18em; /* 18% of font size */
+    font-weight: 500;
+    color: #15325A;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.section-header {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    line-height: 1.3;
+}
+
+.section-paragraph {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.section-header-one {
+    width: 80%;
+    color: #3b3b3b;
+}
+
+.section-paragraph-one {
+    color: #3b3b3b;
+    max-width: 85%;
+    margin-bottom: 40px;
+}
+
+.about-img {
+    width: 100%;
+    height: 436px;
+    object-fit: cover; 
+}
+
+.about-position-relative {
+    position: relative;
+}
+
+.experience-circle {
+    position: absolute;
+    bottom: 20px;
+    left: -50px; 
+    width: 160px;
+    height: 160px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* Drop shadow */
+}
+
+.years-text {
+    font-size: 48px;
+    font-weight: 700;
+    color: #15325A;
+    margin: 0;
+}
+
+.years-subtext {
+    font-size: 14px;
+    color: #15325A;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 4px;
+}
+
+/* Second About Section */
+.beyond-numbers-section {
+    position: relative;
+    background: url('../images/cropped-skyscraper-img.png') no-repeat center center/cover;
+    height: 500px; 
+    width: 100%;
+}
+
+.overlay-half {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%; /* Cover half of the image */
+    height: 100%;
+    background-color: rgba(21, 50, 90, 0.9); 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.overlay-content {
+    padding-left: 80px; 
+    padding-right: 200px;
+    color: #ffffff;
+    text-align: left;
+    z-index: 2; /* Text is above the overlay */
+}
+
+.section-header-two {
+    color: #ffffff;
+}
+
+/* Mission Vision Section */
+.mission-vision-section {
+    padding: 100px 0;
+}
+
+.mission-vision-row {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+
+.box-style {
+    background-color: #E5F7FF;
+    border-radius: 4px;
+    padding: 0; 
+    text-align: center;
+    /*box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);*/
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.mission-box {
+    margin-right: 40px;
+}
+
+.vision-box {
+    margin-left: 40px;
+}
+
+.mission-vision-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin: 0;
+    padding: 0;
+}
+
+.box-heading {
+    font-size: 24px;
+    color: #15325A;
+    margin-top: 40px;
+}
+
+.box-paragraph {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #3B3B3B;
+    margin-top: 15px;
+    padding: 0 60px 40px 60px;
+}
+
+/* Horizontal Separator Line */
+.separator-line {
+    width: 100%;
+    height: 1px;
+    background-color: #d9d9d9;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
 
 
 
@@ -283,9 +437,9 @@ h1 {
 }
 
 .footer-header {
-    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: bold;
+    letter-spacing: 0.1em;
     color: #D8C26C;
     margin-bottom: 40px; /* Gap between header and links */
 }
@@ -309,7 +463,6 @@ h1 {
     color: #D8C26C;
 }
 
-/* Column Width Adjustments */
 .company-links {
     width: 10%; 
 
@@ -324,30 +477,35 @@ h1 {
     margin-right: 40px;
 }
 
-/* Horizontal line for separation */
 .footer-line {
     border-top: 1px solid rgba(255, 255, 255, 0.35);
     margin: 20px 0;
 }
 
-/* Footer Bottom */
+/* Footer Bottom Section*/
 .footer-bottom {
     text-align: center;
     padding-top: 0;
 }
 
 .footer-bottom-text {
-    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     text-align: left;
 }
 
 
 
-
 /******************** Responsive Adjustments ********************/
 
-@media (max-width: 1240px) {
+@media (max-width: 1245px) { 
+    .overlay-half {
+        width: 65%;
+    }
+
+    .overlay-content {
+        padding-right: 150px;
+    }
+
     .footer-content {
         display: flex;
         flex-wrap: wrap;
@@ -373,16 +531,76 @@ h1 {
     }
     
     .support-links {
-        width: 40%; 
-    }
-
-    .container-fluid {
-        padding-left: 100px; 
-        padding-right: 100px; 
+        width: 20%; 
     }
 }
 
+@media (max-width: 1024px) {
+    .container-fluid {
+        padding-left: 80px; 
+        padding-right: 80px; 
+    }
+
+    .about-content-section {
+        padding: 100px 80px;
+    }
+
+    .about-content-section .row {
+        flex-direction: column; /* Stack content vertically */
+    }
+
+    .about-content-section .col-md-6 {
+        width: 100%; 
+    }
+
+    .about-img {
+        height: auto;
+    }
+
+    .section-header {
+        width: 100%;
+    }
+
+    .section-paragraph {
+        max-width: 100%;
+    }
+
+    .about-img {
+        margin-top: 20px; 
+    }
+
+    .experience-circle {
+        top: 0;
+        left: 60px; 
+    }
+
+    .overlay-content {
+        padding-right: 80px; /* Align with container fluid padding */
+    }
+
+    /*.mission-vision-row {
+        flex-direction: column; 
+    }*/
+
+    .mission-box {
+        margin-right: 0;
+    }
+
+    .vision-box {
+        margin-left: 0;
+    }
+
+    .box-paragraph {
+        padding: 0 40px 40px 40px;
+    }
+
+}
+
 @media (max-width: 900px) {
+    .overlay-half {
+        width: 100%;
+    }
+
     .footer-content {
         flex-direction: column;
         align-items: flex-start;
@@ -393,9 +611,28 @@ h1 {
         margin-right: 0;
         margin-bottom: 40px;
     }
-    .container-fluid {
-        padding-left: 40px;  
-        padding-right: 40px; 
-    }
     
+}
+
+@media (max-width: 768px) {
+    .experience-circle {
+        width: 120px;
+        height: 120px;
+        left: 40px;
+    
+    }
+    .years-text {
+        font-size: 36px; /* Resize text inside the circle for smaller screens */
+    }
+
+    .years-subtext {
+        font-size: 12px;
+        width: 50%;
+    }
+}
+
+@media (max-width: 520px) {
+    .beyond-numbers-section {
+        height: 650px;
+    }
 }
