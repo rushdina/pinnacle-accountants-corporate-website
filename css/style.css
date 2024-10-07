@@ -118,13 +118,31 @@ h1 {
 
 /******************** Navbar Styles ********************/
 .custom-navbar {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
-    background-color: rgba(21, 50, 90, 0.65);
     position: absolute;
     top: 0;
     width: 100%;
     z-index: 10;
     padding: 15px 0;
+    transition: background-color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.navbar-index {
+    background-color: transparent;
+}
+
+.navbar-sub {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+    background-color: rgba(21, 50, 90, 0.65);
+}
+
+/* Background color for scrolled navbar */
+.navbar-scrolled {
+    position: fixed;
+    top: 0;
+    background-color: #15325A !important; 
+    border-bottom: none !important;
+    width: 100%;
+    z-index: 999;
 }
 
 .custom-navbar .navbar-brand {
@@ -381,5 +399,3 @@ h1 {
     }
     
 }
-
-
