@@ -18,7 +18,36 @@ body {
 h1 {
     font-family: 'Abhaya Libre', serif;
     font-weight: 700;
+    font-size: 64px;
 }
+
+h2 {
+    line-height: 1.3;
+}
+
+p {
+    line-height: 1.8;
+}
+
+.subheading {
+    font-size: 16px;
+    letter-spacing: 0.18em; /* 18% of font size */
+    font-weight: 500;
+    color: #15325A;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.section-header {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.section-paragraph {
+    font-size: 16px;
+}
+
 
 
 
@@ -187,27 +216,6 @@ h1 {
     padding: 100px 0;
 }
 
-.about-content-section .subheading {
-    font-size: 16px;
-    letter-spacing: 0.18em; /* 18% of font size */
-    font-weight: 500;
-    color: #15325A;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-.section-header {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 40px;
-    line-height: 1.3;
-}
-
-.section-paragraph {
-    font-size: 16px;
-    line-height: 1.8;
-}
-
 .section-header-one {
     width: 80%;
     color: #3b3b3b;
@@ -346,13 +354,106 @@ h1 {
 
 /* Horizontal Separator Line */
 .separator-line {
-    width: 100%;
+    width: calc(100% - 300px); /* Subtract container-fluid padding (150px on both sides) */
     height: 1px;
-    background-color: #d9d9d9;
+    background-color:rgba(30, 78, 144, 0.3);
     border: none;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto; 
 }
+
+/* Why Choose Us Section */
+.why-choose-us-section {
+    padding: 100px 0;
+}
+
+.why-choose-us-section .subheading {
+    text-align: center;
+}
+
+.why-choose-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.trusted-partner {
+    color: #3b3b3b;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.financial-excellence {
+    color: #d8c26c;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+/* Reasons Section */
+.why-box {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: flex-start;
+}
+
+.icon-container {
+    background-color: #15325A;
+    border-radius: 50%;
+    width: 76px;
+    height: 76px;
+    padding: 15px;
+    margin-right: 20px;
+    display: inline-block;
+    border: 13px solid rgba(255, 255, 255, 0.7);
+}
+
+
+.icon-container i {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.content-container {
+    padding-right: 35px;
+    flex-grow: 1;
+}
+
+.why-heading {
+    font-size: 24px;
+    font-weight: 700;
+    color: #3b3b3b;
+    margin-bottom: 10px;
+}
+
+.why-paragraph {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #3b3b3b;
+}
+
+/* Responsive Design 
+@media (max-width: 768px) {
+    .why-choose-header {
+        font-size: 32px;
+    }
+
+    .trusted-partner,
+    .financial-excellence {
+        font-size: 28px;
+    }
+    
+    .why-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icon-container {
+        margin: 0 auto 20px auto;
+    }
+    
+    .content-container {
+        text-align: center;
+    }
+}*/
+
 
 
 
@@ -397,7 +498,7 @@ h1 {
 
 .logo-initial {
     height: 50px;
-    margin-right: 15px; 
+    margin-right: 15px; /* Space between logos */
 }
 
 .logo-fullname {
@@ -594,12 +695,16 @@ h1 {
         padding: 0 40px 40px 40px;
     }
 
+    .separator-line {
+        width: calc(100% - 80px); /* Subtract container-fluid padding (40px on both sides) */
+    }
+
 }
 
 @media (max-width: 900px) {
     .overlay-half {
         width: 100%;
-    } 
+    }
 }
 
 @media (max-width: 768px) {
@@ -617,6 +722,10 @@ h1 {
     .years-subtext {
         font-size: 12px;
         width: 50%;
+    }
+
+    .separator-line {
+        width: calc(100% - 40px); /* Subtract container-fluid padding (20px on both sides) */
     }
 }
 
