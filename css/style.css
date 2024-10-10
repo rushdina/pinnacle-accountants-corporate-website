@@ -36,7 +36,7 @@ p {
     color: #d8c26c;
 }
 
-.subheading {
+.prehead {
     font-size: 16px;
     letter-spacing: 0.18em; /* 18% of font size */
     font-weight: 500;
@@ -48,6 +48,7 @@ p {
 .section-paragraph {
     font-size: 16px;
 }
+
 
 
 
@@ -113,6 +114,11 @@ p {
     padding-left: 150px;
 }
 
+.index-banner-content h1 {
+    margin-bottom: 40px;
+
+}
+
 .index-banner-content .highlight {
     color: #D8C26C;
 }
@@ -121,12 +127,12 @@ p {
     background-color: #d8c26c;
     font-weight: 500;
     color: #15325A;
+    text-decoration: none;
     border: none;
     border-radius: 4px; 
-    padding: 10px 60px; 
+    padding: 20px 60px; 
     font-size: 20px; 
     cursor: pointer; 
-    margin-top: 40px; 
     transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
@@ -136,6 +142,7 @@ p {
     color: #15325A; 
     
 }
+
 
 
 /******************** Navbar Styles ********************/
@@ -200,7 +207,9 @@ p {
 
 
 
+
 /******************** Home Page ********************/
+
 
 
 
@@ -363,7 +372,7 @@ p {
     padding: 100px 0;
 }
 
-.why-choose-us-section .subheading {
+.why-choose-us-section .prehead {
     text-align: center;
 }
 
@@ -393,6 +402,7 @@ p {
     display: inline-block;
     border: 13px solid rgba(255, 255, 255, 0.7);
 }
+
 
 .icon-container i {
     font-size: 24px;
@@ -641,7 +651,98 @@ p {
 
 
 
+
 /******************** Contact Page ********************/
+/* Contact section layout */
+.contact-section {
+    padding: 100px 0;
+}
+
+/* Left side (image and contact details) */
+.contact-left {
+    padding-right: 30px; /* Ensuring proper spacing */
+}
+
+.building-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.contact-left h2 {
+    font-size: 36px;
+    color: #3b3b3b;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.company-details {
+    list-style: none;
+    padding: 0;
+}
+
+.company-details li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #3b3b3b;
+}
+
+.company-details li:first-child {
+    align-items: flex-start; 
+    padding-top: 4px;
+}
+
+.company-details li:first-child i {
+    margin-top: 5px;
+}
+
+.company-details i {
+    margin-right: 20px;
+    color: #15325a;
+}
+
+/* Right side (contact form) */
+.contact-right {
+    background-color: #e5f7ff;
+    padding: 30px;
+    border-radius: 4px;
+}
+
+.contact-right h2 {
+    font-size: 24px;
+    color: #3b3b3b;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-right form input,
+.contact-right form select,
+.contact-right form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    font-size: 16px;
+}
+
+.contact-right form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #15325a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-right form button:hover {
+    background-color: #15325a;
+    color: white;
+}
 
 /* Subscribe Section */
 .subscribe-section {
@@ -730,6 +831,7 @@ p {
 
 
 
+
 /******************** Footer Section ********************/
 .footer-section {
     background-color: #15325A;
@@ -773,30 +875,17 @@ p {
     margin-right: 80px;
 }
 
-.company-details {
-    list-style: none;
-    padding: 0;
-}
-
-.company-details li {
+.company-details-footer li {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
     color: #ffffff;
+    font-size: 14px;
 }
 
-.company-details i {
+.company-details-footer i {
     margin-right: 20px;
     color: #D8C26C;
-}
-
-.company-details li:first-child {
-    align-items: flex-start; /* Align at the top */
-    padding-top: 4px;
-}
-
-.company-details li:first-child i {
-    margin-top: 5px;
 }
 
 /* Footer Links Section */
@@ -861,6 +950,7 @@ p {
     font-size: 12px;
     text-align: left;
 }
+
 
 
 
@@ -1089,3 +1179,4 @@ p {
         margin-bottom: 20px;
     }
 }
+
