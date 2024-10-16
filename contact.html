@@ -148,7 +148,7 @@
     <hr class="separator-line">
 
     <!-- FAQ Section -->
-    <section class="faq-section">
+    <section id="faq-section" class="faq-section">
         <div class="container-fluid">
             <div class="row">
                 <!-- Left Column: FAQ Heading -->
@@ -266,7 +266,6 @@
         </div>
     </section>
 
-
     <!-- Subscribe Section -->
     <section class="subscribe-section">
         <div class="container-fluid">
@@ -290,69 +289,93 @@
     <footer class="footer-section">
         <div class="container-fluid">
             <div class="footer-content">
-                <!-- Left Column: Logo and Company Information -->
+                <!-- Left Column: Company Information -->
                 <div class="company-info">
                     <div class="footer-logo">
                         <img src="images/logo-PA.png" alt="Pinnacle Initial Logo" class="logo-initial">
                         <img src="images/logo.png" alt="Pinnacle Full Name Logo" class="logo-fullname">
                     </div>
                     <ul class="company-details company-details-footer">
-                        <li>
-                            <i class="fa-solid fa-location-dot" style="color: #d8c26c;"></i>
-                            12 Marina Boulevard, Level 17 Marina Bay, <br>Financial Center Tower 3, Singapore 018982
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-phone" style="color: #d8c26c;"></i>
-                            (+65) 6323 5788
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-envelope" style="color: #d8c26c;"></i>
-                            info@pinnacleaccountants.sg
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-clock" style="color: #d8c26c;"></i>
-                            Monday - Friday: 9:00 AM - 6:00 PM
-                        </li>
+                        <li><i class="fa-solid fa-location-dot" style="color: #d8c26c;"></i>12 Marina Boulevard, Level 17 Marina Bay, <br>Financial Center Tower 3, Singapore 018982</li>
+                        <li><i class="fa-solid fa-phone" style="color: #d8c26c;"></i>(+65) 6323 5788</li>
+                        <li><i class="fa-solid fa-envelope" style="color: #d8c26c;"></i>info@pinnacleaccountants.sg</li>
+                        <li><i class="fa-solid fa-clock" style="color: #d8c26c;"></i>Monday - Friday: 9:00 AM - 6:00 PM</li>
                     </ul>
                 </div>
-    
+        
                 <!-- Company Links Column -->
                 <div class="footer-links company-links">
                     <h5 class="footer-header">Company</h5>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">Awards</a></li>
+                        <li><a href="#">Our Leaders</a></li>
+                        <li><a href="#">Insights</a></li>
+                        <li><a href="about.html#awards-section">Awards</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html#faq-section">FAQ</a></li>
                     </ul>
                 </div>
-    
+        
                 <!-- Services Links Column -->
                 <div class="footer-links services-links">
                     <h5 class="footer-header">Services</h5>
                     <ul>
-                        <li><a href="#">Accounting and Financial Reporting</a></li>
-                        <li><a href="#">Tax Planning and Compliance</a></li>
-                        <li><a href="#">Advisory and Risk Management</a></li>
-                        <li><a href="#">Auditing and Assurance</a></li>
-                        <li><a href="#">Corporate Secretarial</a></li>
+                        <li><a href="#">Accounting & Financial Reporting</a></li>
+                        <li><a href="#">Tax Planning & Compliance</a></li>
+                        <li><a href="#">Advisory & Risk Management</a></li>
+                        <li><a href="#">Auditing & Assurance Services</a></li>
+                        <li><a href="#">Corporate Secretarial Services</a></li>
+                        <li><a href="#">Cybersecurity & Data Protection</a></li>
                     </ul>
                 </div>
-    
-                <!-- Support Links Column -->
-                <div class="footer-links support-links">
-                    <h5 class="footer-header">Support</h5>
-                    <ul>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
+        
+                <!-- Industries Links Column (2 Columns) -->
+                <div class="footer-links industries-links">
+                    <h5 class="footer-header">Industries</h5>
+                    <div class="industries-columns">
+                        <ul class="industries-column-1">
+                            <li><a href="#">Finance & Banking</a></li>
+                            <li><a href="#">Information Technology (IT)</a></li>
+                            <li><a href="#">Healthcare & Life Sciences</a></li>
+                            <li><a href="#">Manufacturing</a></li>
+                            <li><a href="#">Retail & E-commerce</a></li>
+                            <li><a href="#">Logistics & Supply Chain</a></li>
+                            <li><a href="#">Real Estate & Property Development</a></li>
+                            <li><a href="#">Education & Training</a></li>
+                        </ul>
+                        <ul class="industries-column-2">
+                            <li><a href="#">Food & Beverage (F&B)</a></li>
+                            <li><a href="#">Telecommunications</a></li>
+                            <li><a href="#">Energy & Utilities</a></li>
+                            <li><a href="#">Construction & Engineering</a></li>
+                            <li><a href="#">Tourism & Hospitality</a></li>
+                            <li><a href="#">Legal & Professional Services</a></li>
+                            <li><a href="#">Non-Profit & Social Enterprises</a></li>
+                            <li><a href="#">Media & Entertainment</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-    
+        
             <!-- Bottom Line and Copyright -->
-            <hr class="footer-line">
             <div class="footer-bottom">
                 <p class="footer-bottom-text">Copyright © 2024 Pinnacle Accountants LLP. All Rights Reserved.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Legal and Terms Links Section -->
+            <div class="footer-links-bottom">
+                <a href="#" class="footer-bottom-link">Legal and Privacy Policy</a>
+                <span class="separator">|</span>
+                <a href="#" class="footer-bottom-link">Terms of Services</a>
             </div>
         </div>
     </footer>
