@@ -7,3 +7,10 @@ window.onscroll = function() {
             navbar.classList.remove('navbar-scrolled');
     }
 };
+
+// Duration for each testimonial
+var myCarousel = document.querySelector('#testimonialCarousel');
+var carousel = new bootstrap.Carousel(myCarousel, {
+    interval: 6000, // 6 seconds duration for each testimonial
+    wrap: true
+});

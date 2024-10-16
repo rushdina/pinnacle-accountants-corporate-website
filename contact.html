@@ -47,6 +47,18 @@
                                 <a class="nav-link" href="about.html">About Us</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Industries</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Insights</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Careers</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contact</a>
                             </li>
                         </ul>
@@ -65,61 +77,195 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section class="contact-section">
         <div class="container-fluid">
-            <div class="row">
-                <!-- Left side: Contact details -->
-                <div class="contact-left col-md-6">
-                    <img src="images/building-contact.jpg" alt="Pinnacle Building" class="building-image">
-                    <h2>Pinnacle Accountants LLP</h2>
+            <div class="row align-items-start">
+                <!-- Left: Company Contact Details -->
+                <div class="col-md-6 contact-details">
+                    <img src="images/building-contact.png" alt="Pinnacle Building" class="contact-image">
+                    <h2 class="company-name">Pinnacle Accountants LLP</h2>
                     <ul class="company-details">
                         <li>
-                            <i class="fa-solid fa-location-dot" style="color: #15325a;"></i>
+                            <i class="fa-solid fa-location-dot"></i> 
                         12 Marina Boulevard, Level 17 Marina Bay, <br>Financial Center Tower 3, Singapore 018982
                         </li>
                         <li>
-                            <i class="fa-solid fa-phone" style="color: #15325a;"></i>
+                            <i class="fa-solid fa-phone"></i> 
                         (+65) 6323 5788
                         </li>
                         <li>
-                            <i class="fa-solid fa-envelope" style="color: #15325a;"></i>
+                            <i class="fa-solid fa-envelope"></i> 
                         info@pinnacleaccountants.sg
                         </li>
                         <li>
-                            <i class="fa-solid fa-clock" style="color: #15325a;"></i>
+                            <i class="fa-solid fa-clock"></i> 
                         Monday - Friday: 9:00 AM - 6:00 PM
                         </li>
                     </ul>
                 </div>
-    
-                <!-- Right side: Contact form -->
-                <div class="contact-right col-md-6">
-                    <h2>Get in touch!</h2>
-                    <form>
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="text" placeholder="Company Name" required>
-                        <input type="email" placeholder="Email Address" required>
-                        <input type="tel" placeholder="Phone Number (optional)">
-                        <select required>
-                            <option value="" disabled selected>Select type of inquiry</option>
-                            <option value="general">General Inquiry</option>
-                            <option value="consultation">Consultation Request</option>
-                            <option value="service">Service Inquiry</option>
-                            <option value="partnership">Partnership Opportunities</option>
-                            <option value="other">Others</option>
-                        </select>
-                        <textarea placeholder="Write your message" required></textarea>
-                        <button type="submit">Send Message</button>
-                    </form>
+
+                <!-- Right: Contact Form -->
+                <div class="col-md-6 contact-form-container">
+                    <div class="contact-form">
+                        <h3>Get in touch!</h3>
+                        <form action="" method="post">
+                            <!-- Name: only letters allowed -->
+                            <input type="text" name="name" placeholder="Your Name" 
+                               pattern="[A-Za-z\s]+" title="Name should only contain letters" 
+                               required class="form-control">
+                            <!-- Company: letters, numbers, symbols allowed -->
+                            <input type="text" name="company" placeholder="Company Name" 
+                               pattern="[\w\s\-\.\,\&]+" title="Company name can contain letters, numbers, and symbols" 
+                               required class="form-control">
+                            <!-- Email: HTML5 built-in email validation -->
+                            <input type="email" name="email" placeholder="Email Address" 
+                               required class="form-control">
+                            <!-- Phone: optional, numbers only -->
+                            <input type="tel" name="phone" placeholder="Phone Number (optional)" 
+                               pattern="\d*" title="Phone number should only contain digits" 
+                               class="form-control">
+                            <!-- Dropdown -->
+                            <select name="inquiry" class="form-control" required>
+                                <option value="" disabled selected>Select type of inquiry</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="consultation">Consultation Request</option>
+                                <option value="service">Service Inquiry</option>
+                                <option value="partnership">Partnership Opportunities</option>
+                                <option value="others">Others</option>
+                            </select>
+                            <!-- Message Box -->
+                            <textarea name="message" placeholder="Write your message" required class="form-control"></textarea>
+
+                            <button type="submit" class="btn-send">Send Message</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <!-- FAQ Section -->
-    <section>
 
+    <hr class="separator-line">
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Left Column: FAQ Heading -->
+                <div class="col-md-4">
+                    <div class="faq-heading">
+                        <p class="prehead">FAQ</p>
+                        <h2 class="section-header">Frequently Asked Questions</h2>
+                    </div>
+                </div>
+        
+                <!-- Right Column: Accordion FAQ -->
+                <div class="col-md-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                How does the free consultation work?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    During the free consultation, we start by understanding your business and its unique financial challenges. We will analyse your current situation, discuss your goals, and identify areas for improvement. You’ll receive tailored advice on how we can help your business grow. Afterward, you’ll receive a personalised proposal with clear next steps to streamline your financial operations, all with no obligation. It’s an opportunity to discover how Pinnacle can add value to your business.
+                                </div>
+                            </div>
+                        </div>
+  
+                        <!-- Question 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                What are the costs of your services?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Our pricing is customised to fit your business’s size and specific financial needs. For SMEs and startups, we offer scalable pricing plans designed to be affordable and flexible as you grow your business. We believe in transparent pricing, so after the free consultation, we’ll provide a detailed breakdown of costs, with no hidden fees, ensuring you only pay for the services you need. We tailor our services to fit your budget without compromising on quality, making Pinnacle an accessible partner at every stage of your growth.
+                                </div>
+                            </div>
+                        </div>
+  
+                        <!-- Question 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                How can Pinnacle help my business stay compliant with IRAS and ACRA regulations?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Staying compliant with IRAS tax regulations and ACRA corporate governance standards is crucial for avoiding penalties and ensuring smooth operations. At Pinnacle, we automate compliance tasks like tax filings, financial reporting, and statutory submissions, ensuring accuracy and timely submissions. Our team continuously monitors regulatory changes, ensuring your business is always up to date and can avoid any legal or financial risks. With Pinnacle, you can focus on growing your business, confident that your compliance needs are taken care of by experts.
+                                </div>
+                            </div>
+                        </div>
+  
+                        <!-- Question 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Can the technology you use integrate with my business systems? 
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes. Our cloud-based platforms, such as Xero and QuickBooks, are highly adaptable and scalable, making it easy to integrate seamlessly with a variety of business systems. If you’re already using accounting software, we can seamlessly migrate your data and ensure compatibility. For businesses without existing technology, we will set up everything for you. 
+                                    <br><br>   
+                                    At Pinnacle, we will manage and support your financial systems, so you can focus on running your business while we handle the technology, compliance with regulatory requirements, and financial reporting, ensuring that your operations remain smooth, efficient, and fully compliant with industry standards.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 5 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Do you offer ongoing financial advisory services or just one-time assistance? 
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We provide both one-time services and ongoing financial advisory support. Whether you need help with a specific financial challenge or prefer continuous support to guide your business through tax planning, growth strategies, or risk management, our team is here to assist. Many of our clients choose to partner with us for ongoing advisory services, giving them access to expert insights and proactive financial planning that help them stay ahead in a competitive market. With Pinnacle, you get expert support that evolves with your business.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 6 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                How do I know which services I need for my business? 
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    If you're unsure which services will benefit your business, we offer a range of options tailored to your needs. We take into account factors like your industry, business size, growth stage, and regulatory requirements. Our team will work with you to identify the most relevant services, whether it’s accounting, tax planning, risk management, or a combination of solutions. During our free consultation, we’ll recommend a package that helps you achieve your goals while ensuring compliance and financial health.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 7 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                How quickly can I start working with Pinnacle?
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We schedule your free consultation within 24-48 hours of your initial inquiry. After the consultation, we can begin implementing solutions tailored to your needs immediately, depending on the complexity of your requirements. Our goal is to provide a quick, efficient turnaround, ensuring your business gets the financial support it needs as soon as possible. With Pinnacle, there’s no delay in getting your business on track for growth and compliance.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
     </section>
+
 
     <!-- Subscribe Section -->
     <section class="subscribe-section">
