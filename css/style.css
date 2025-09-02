@@ -81,7 +81,7 @@ p {
     right: 0;
     height: calc(100% - 90px); /* Fills the remaining space below the navbar */
     background-color: #0b336acc;
-    z-index: 0; /* Overlay is below the text */
+    z-index: 0;
 }
 
 .banner-content {
@@ -258,7 +258,7 @@ p {
 .service-box {
     position: relative;
     text-align: center;
-    padding: 0;
+    padding: 60px 40px;
     flex-basis: calc(33.33% - 20px); /* 3 boxes per row - gap */
     background-size: cover;
     background-position: center;
@@ -267,10 +267,11 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(14, 55, 112);
 }
 
-.service-box .overlay-services {
-    background-color: rgba(14, 55, 112, 0.9);
+/*.service-box {
+    background-color: rgb(14, 55, 112);
     padding: 60px 40px;
     width: 100%;
     height: 100%;
@@ -278,7 +279,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+}*/
 
 .service-icon {
     max-width: 40px;
@@ -307,6 +308,9 @@ p {
     text-decoration: underline;
     display: inline-block;
     transition: color 0.3s ease;
+    position: absolute;
+    bottom: 25px;
+    transform: translate(-50%, -50%);
 }
 
 .service-link i {
@@ -1348,7 +1352,7 @@ p {
 
 .industries-columns {
     display: flex;
-    justify-content: space-between; /* Two columns separated */
+    justify-content: space-between; 
 }
 
 .industries-columns ul {
