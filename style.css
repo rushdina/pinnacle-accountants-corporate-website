@@ -7,6 +7,11 @@ body {
   box-sizing: border-box;
 }
 
+:root {
+  --main-color: #162c4c;
+  --accent-color: #ccda09;
+}
+
 /* Consistent Padding Across All Sections */
 .container-fluid {
   padding-left: 150px;
@@ -59,13 +64,16 @@ p {
 }
 
 .about-banner {
-  background: url("../images/shake-hands-img.jpg") no-repeat center center/cover;
+  background: url("../images/unsplash-building-contact.png") no-repeat;
+  background-size: cover;
+  background-position: top;
   height: 500px;
 }
 
 .contact-banner {
-  background: url("../images/meeting-img.jpg") no-repeat center center/cover;
-  background-position: top center;
+  background: url("../images/pexels-handshake-contactBanner.jpg") no-repeat;
+  background-size: cover;
+  background-position: center 70%; /* 80% from the top = 20% from the bottom */
   height: 500px;
 }
 
@@ -75,7 +83,16 @@ p {
   left: 0;
   right: 0;
   height: calc(100% - 90px); /* Fills the remaining space below the navbar */
-  background-color: #0b336acc;
+  background-color: #1c3961cc;
+  z-index: 0;
+}
+.overlay-home {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 0;
+  height: calc(100% - 90px); /* Fills the remaining space below the navbar */
+  background-color: #3376d25a;
   z-index: 0;
 }
 
@@ -116,7 +133,7 @@ p {
 .index-banner-content .banner-cta-btn {
   background-color: #ffffff;
   font-weight: 500;
-  color: #0b336a;
+  color: var(--main-color);
   text-decoration: none;
   border: none;
   border-radius: 4px;
@@ -130,9 +147,7 @@ p {
 
 .index-banner-content .banner-cta-btn:hover,
 .index-banner-content .banner-cta-btn:active {
-  /* background-color: #ccda09; */
-  background-color: #ccda09;
-  /* color: #ffffff; */
+  background-color: var(--accent-color);
 }
 
 /******************** Navbar Styles ********************/
@@ -149,19 +164,16 @@ p {
   background-color: transparent;
 }
 
-.navbar-sub {
+/*.navbar-sub {
   border-bottom: 1px solid rgba(255, 255, 255, 0.35);
   background-color: rgba(11, 51, 106, 0.65);
-}
+}*/
 
-/* Background color for scrolled navbar */
-/* .navbar-scrolled, */
 .navbar {
   position: fixed;
   top: 0;
-  background-color: #15325a !important;
-  background-color: #132439 !important;
-  border-bottom: none !important;
+  background-color: var(--main-color);
+  border-bottom: none;
   width: 100%;
   z-index: 999;
 }
@@ -262,17 +274,6 @@ p {
   background-color: rgb(14, 55, 112);
 }
 
-/*.service-box {
-    background-color: rgb(14, 55, 112);
-    padding: 60px 40px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}*/
-
 .service-icon {
   max-width: 40px;
   margin-bottom: 20px;
@@ -333,7 +334,7 @@ p {
 }
 
 .intro-btn {
-  background-color: #0b336a;
+  background-color: var(--main-color);
   color: white;
   font-size: 16px;
   padding: 15px 30px;
@@ -345,7 +346,7 @@ p {
 }
 
 .intro-btn:hover {
-  background-color: #ccda09;
+  background-color: var(--accent-color);
   color: #ffffff;
 }
 
@@ -511,7 +512,7 @@ p {
 }
 
 .view-more-btn {
-  background-color: #0b336a;
+  background-color: var(--main-color);
   color: #ffffff;
   padding: 15px 40px;
   font-size: 16px;
@@ -523,7 +524,7 @@ p {
 }
 
 .view-more-btn:hover {
-  background-color: #ccda09;
+  background-color: var(--accent-color);
 }
 
 /* Awards Logo Section */
@@ -623,7 +624,7 @@ p {
 /* Second About Section */
 .maximize-section {
   position: relative;
-  background: url("../images/cropped-skyscraper-img.png") no-repeat center
+  background: url("../images/unsplash-graph-about.jpg") no-repeat center
     center/cover;
   height: 680px;
   width: 100%;
@@ -635,7 +636,7 @@ p {
   right: 0;
   width: 56%;
   height: 100%;
-  background-color: rgba(11, 51, 106, 0.9);
+  background-color: rgba(19, 41, 70, 0.9);
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -943,7 +944,7 @@ p {
 }
 
 .gold-highlight {
-  color: #ccda09;
+  color: var(--accent-color);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -959,7 +960,7 @@ p {
 }
 
 .cta-btn:hover {
-  background-color: #ccda09;
+  background-color: var(--accent-color);
   color: #ffffff;
 }
 
@@ -1047,7 +1048,7 @@ p {
 }
 
 .contact-form .btn-send {
-  background-color: #0b336a;
+  background-color: var(--main-color);
   color: #ffffff;
   font-size: 16px;
   padding: 15px 20px;
@@ -1059,7 +1060,7 @@ p {
 }
 
 .contact-form .btn-send:hover {
-  background-color: #ccda09;
+  background-color: var(--accent-color);
   color: #ffffff;
 }
 
@@ -1159,7 +1160,7 @@ p {
 }
 
 .subscribe-btn {
-  background-color: #ccda09;
+  background-color: var(--accent-color);
   height: 60px;
   padding: 15px 25px;
   border: none;
@@ -1176,13 +1177,12 @@ p {
 }
 
 .subscribe-btn:hover {
-  background-color: #c0a856;
+  background-color: var(--main-color);
 }
 
 /******************** Footer Section ********************/
 .footer-section {
-  background-color: #15325a;
-  background-color: #132439;
+  background-color: var(--main-color);
   color: #ffffff;
   padding: 80px 0 20px 0;
   font-size: 14px;
