@@ -20,6 +20,13 @@ body {
   box-sizing: border-box;
 }
 
+.container {
+  padding-left: 150px;
+  padding-right: 150px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
 h1 {
   font-family: "Abhaya Libre", serif;
   font-weight: 700;
@@ -140,7 +147,9 @@ p {
   padding: 20px 40px;
   font-size: 20px;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
   display: inline-block;
   margin-top: 4px;
 }
@@ -157,7 +166,9 @@ p {
   width: 100%;
   z-index: 10;
   padding: 15px 0;
-  transition: background-color 0.3s ease, border-bottom 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    border-bottom 0.3s ease;
 }
 
 .navbar-index {
@@ -453,7 +464,9 @@ p {
   padding: 0;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .insight-box:hover {

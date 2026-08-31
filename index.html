@@ -1,8 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pinnacle Accountants LLP provides accounting, tax, audit, advisory, and corporate compliance services for Singapore businesses."
+    />
+
+    <title>Pinnacle Accountants LLP | Accounting & Advisory</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
@@ -10,10 +16,10 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
-    />
+    /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
@@ -38,20 +44,25 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
-
-    <title>Pinnacle Accountants LLP</title>
   </head>
   <body>
     <!-- Banner and Navbar combined -->
     <section class="banner-section index-banner">
-      <header>
-        <nav class="navbar navbar-expand-lg custom-navbar navbar-index">
-          <div class="container-fluid">
+      <header class="site-header">
+        <nav
+          class="navbar navbar-expand-lg fixed-top custom-navbar"
+          aria-label="Main navigation"
+        >
+          <div class="container">
             <!-- Logo -->
-            <a class="navbar-brand" href="index.html">
+            <a
+              class="navbar-brand"
+              href="index.html"
+              aria-label="Pinnacle Accountants home"
+            >
               <img
                 src="images/logo.png"
-                alt="Pinnacle Logo"
+                alt="Pinnacle Accountants LLP"
                 class="logo"
                 height="50px"
               />
@@ -69,27 +80,29 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
+              <ul class="navbar-nav ms-auto align-items-lg-center">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html">About Us</a>
+                  <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Services</a>
+                  <a class="nav-link" href="index.html#services">Services</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Industries</a>
+                  <a class="nav-link" href="index.html#insights">Insights</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Insights</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Careers</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
+                  <a class="nav-link nav-cta" href="contact.html">Contact</a>
                 </li>
               </ul>
             </div>
@@ -97,8 +110,30 @@
         </nav>
       </header>
 
-      <!-- Banner Section Content -->
-      <div class="overlay-home"></div>
+      <main>
+        <!-- Hero Section Content -->
+        <section class="hero hero-home" aria-labelledby="home-title">
+          <div class="container hero-content">
+            <p class="eyebrow">Accounting • Tax • Advisory</p>
+            <h1 id="home-title">
+              Clear financial guidance for smarter business decisions.
+            </h1>
+            <p class="hero-text">
+              We help Singapore businesses stay compliant, understand their
+              numbers, and plan confidently for growth.
+            </p>
+            <div class="hero-actions">
+              <a href="contact.html" class="btn btn-primary-custom"
+                >Book a consultation</a
+              >
+              <a href="#services" class="btn btn-secondary-custom"
+                >Explore services</a
+              >
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- <div class="overlay-home"></div> -->
       <div class="index-banner-content">
         <div class="container-fluid">
           <h1>
