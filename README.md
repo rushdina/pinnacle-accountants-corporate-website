@@ -2,6 +2,27 @@
 
 A responsive multi-page corporate website frontend prototype for a fictional accounting firm, designed with a clear content structure, consistent visual design, and responsive user experience.
 
+## 🌐 Live Demo
+
+🔗 View app: https://pinnacle-accountants-rushdina.vercel.app/
+
+<table align="center">
+  <tr>
+    <td align="center" valign="top">
+      <em>Homepage</em><br/>
+      <img src="./images/previews/pinnacle-home.png" width="100%" />
+    </td>
+    <td align="center" valign="top">
+      <em>About Page</em><br/>
+      <img src="./images/previews/pinnacle-about.png" width="100%" />
+    </td>
+    <td align="center" valign="top">
+      <em>Contact Page</em><br/>
+      <img src="./images/previews/pinnacle-contact.png" width="100%" />
+    </td>
+  </tr>
+</table>
+
 ## Overview
 
 Pinnacle Accountants is a corporate website frontend prototype designed to present the services, expertise, and company information of a fictional Singapore accounting firm.
