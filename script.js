@@ -18,3 +18,10 @@ if (testimonialCarousel && window.bootstrap) {
     wrap: true,
   });
 }
+
+// prevent href="#" from jumping to the top of the page
+document.querySelectorAll(".insight-card-link").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+  });
+});
