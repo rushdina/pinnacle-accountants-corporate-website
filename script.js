@@ -1,3 +1,4 @@
+// script.js
 const navbar = document.querySelector(".custom-navbar");
 
 function updateNavbar() {
