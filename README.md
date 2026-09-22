@@ -10,15 +10,27 @@ A responsive multi-page corporate website frontend prototype for a fictional acc
   <tr>
     <td align="center" valign="top">
       <em>Homepage</em><br/>
-      <img src="./images/previews/pinnacle-home.png" width="100%" />
+      <img
+        src="./images/previews/pinnacle-home.png"
+        alt="Pinnacle Accountants corporate website homepage"
+        width="100%"
+      />
     </td>
     <td align="center" valign="top">
       <em>About Page</em><br/>
-      <img src="./images/previews/pinnacle-about.png" width="100%" />
+       <img
+        src="./images/previews/pinnacle-about.png"
+        alt="Pinnacle Accountants corporate website About page"
+        width="100%"
+      />
     </td>
     <td align="center" valign="top">
       <em>Contact Page</em><br/>
-      <img src="./images/previews/pinnacle-contact.png" width="100%" />
+       <img
+        src="./images/previews/pinnacle-contact.png"
+        alt="Pinnacle Accountants corporate website Contact page"
+        width="100%"
+      />
     </td>
   </tr>
 </table>
