@@ -841,9 +841,9 @@ p {
 }
 
 @media (max-width: 991px) {
-  .custom-navbar {
+  /* .custom-navbar {
     position: absolute;
-  }
+  } */
 
   .custom-navbar .navbar-collapse {
     padding-top: 1rem;
