@@ -39,6 +39,7 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header class="site-header">
       <nav
@@ -288,44 +289,149 @@
 
     <footer class="site-footer">
       <div class="container footer-grid">
-        <div>
+        <div class="footer-company">
           <img
             src="./images/logo.webp"
             alt="Pinnacle Accountants LLP"
             class="footer-logo"
           />
-          <p>
-            Reliable accounting, tax, and advisory support for Singapore
-            businesses.
+          <p class="footer-description">
+            Building stronger financial foundations to help businesses grow with
+            stability and confidence.
           </p>
+          <address class="footer-contact">
+            <p>
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              <span>12 Marina Boulevard, Singapore 018982</span>
+            </p>
+
+            <p>
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <a href="mailto:info@pinnacleaccountants.sg">
+                info@pinnacleaccountants.sg
+              </a>
+            </p>
+
+            <p>
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              <a href="tel:+6563235788">+65 6323 5788</a>
+            </p>
+          </address>
         </div>
-        <nav aria-label="Footer navigation">
-          <h3 class="footer-title">Company</h3>
+
+        <nav class="footer-nav" aria-labelledby="footer-company-title">
+          <h3 id="footer-company-title" class="footer-title">Company</h3>
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
-          <a href="index.html#services">Services</a>
-          <a href="#">Careers</a>
+          <a href="index.html#insights">Insights</a>
+          <a href="#" aria-disabled="true" onclick="return false;">Careers</a>
           <a href="contact.html">Contact</a>
         </nav>
-        <div>
-          <h3 class="footer-title">Contact</h3>
-          <p>12 Marina Boulevard, Singapore 018982</p>
-          <p>
-            <a href="mailto:info@pinnacleaccountants.sg"
-              >info@pinnacleaccountants.sg</a
-            >
-          </p>
-          <p><a href="tel:+6563235788">+65 6323 5788</a></p>
-        </div>
+
+        <nav class="footer-nav" aria-labelledby="footer-services-title">
+          <h3 id="footer-services-title" class="footer-title">Services</h3>
+
+          <a
+            href="index.html#services"
+            aria-disabled="true"
+            onclick="return false;"
+            >Accounting &amp; Reporting</a
+          >
+          <a
+            href="index.html#services"
+            aria-disabled="true"
+            onclick="return false;"
+            >Tax Compliance</a
+          >
+          <a
+            href="index.html#services"
+            aria-disabled="true"
+            onclick="return false;"
+            >Audit &amp; Assurance</a
+          >
+          <a
+            href="index.html#services"
+            aria-disabled="true"
+            onclick="return false;"
+            >Corporate Secretarial</a
+          >
+          <a
+            href="index.html#services"
+            aria-disabled="true"
+            onclick="return false;"
+            >Business Advisory</a
+          >
+          <a
+            href="index.html#services"
+            aria-disabled="true"
+            onclick="return false;"
+            >Data Protection</a
+          >
+        </nav>
+
+        <nav class="footer-nav" aria-labelledby="footer-industries-title">
+          <h3 id="footer-industries-title" class="footer-title">Industries</h3>
+
+          <a href="#" aria-disabled="true" onclick="return false;"
+            >Asset and Wealth Management</a
+          >
+          <a href="#" aria-disabled="true" onclick="return false;"
+            >Banking and Capital Markets</a
+          >
+          <a href="#" aria-disabled="true" onclick="return false;"
+            >Financial Services</a
+          >
+          <a href="#" aria-disabled="true" onclick="return false;"
+            >Government and Public Services</a
+          >
+          <a href="#" aria-disabled="true" onclick="return false;">Health</a>
+          <a href="#" aria-disabled="true" onclick="return false;">Insurance</a>
+          <a href="#" aria-disabled="true" onclick="return false;"
+            >Oil and Gas</a
+          >
+          <a href="#" aria-disabled="true" onclick="return false;"
+            >Pharmaceutical</a
+          >
+          <a href="#" aria-disabled="true" onclick="return false;"
+            >Private Equity</a
+          >
+          <a href="#" aria-disabled="true" onclick="return false;"
+            >Real Estate</a
+          >
+          <a href="#" aria-disabled="true" onclick="return false;"
+            >Retail and Consumer</a
+          >
+          <a href="#" aria-disabled="true" onclick="return false;"
+            >Technology, Media and Communications</a
+          >
+          <a href="#" aria-disabled="true" onclick="return false;"
+            >Transportation and Logistics</a
+          >
+        </nav>
       </div>
+
       <div class="container footer-bottom">
         <p>© 2024 Pinnacle Accountants LLP. All rights reserved.</p>
-        <div class="social-icons">
-          <a href="#" aria-label="LinkedIn"
-            ><i class="fa-brands fa-linkedin-in"></i></a
-          ><a href="#" aria-label="Facebook"
-            ><i class="fa-brands fa-facebook-f"></i></a
-          ><a href="#" aria-label="Instagram"
+        <div class="social-icons" aria-label="Social links">
+          <a
+            href="#"
+            aria-label="LinkedIn"
+            aria-disabled="true"
+            onclick="return false;"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a
+            href="#"
+            aria-label="Facebook"
+            aria-disabled="true"
+            onclick="return false;"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a
+            href="#"
+            aria-label="Instagram"
+            aria-disabled="true"
+            onclick="return false;"
             ><i class="fa-brands fa-instagram"></i
           ></a>
         </div>
