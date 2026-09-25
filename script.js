@@ -1,27 +1,19 @@
-// script.js
-const navbar = document.querySelector(".custom-navbar");
+const navbar = document.querySelector('.custom-navbar');
 
 function updateNavbar() {
   if (!navbar) return;
-  navbar.classList.toggle("navbar-scrolled", window.scrollY > 20);
+  navbar.classList.toggle('navbar-scrolled', window.scrollY > 20);
 }
 
-window.addEventListener("scroll", updateNavbar, { passive: true });
-window.addEventListener("load", updateNavbar);
+window.addEventListener('scroll', updateNavbar, { passive: true });
+window.addEventListener('load', updateNavbar);
 
-const testimonialCarousel = document.querySelector("#testimonialCarousel");
+const testimonialCarousel = document.querySelector('#testimonialCarousel');
 if (testimonialCarousel && window.bootstrap) {
   new bootstrap.Carousel(testimonialCarousel, {
     interval: 6000,
-    ride: "carousel",
-    pause: "hover",
+    ride: 'carousel',
+    pause: 'hover',
     wrap: true,
   });
 }
-
-// prevent href="#" from jumping to the top of the page
-document.querySelectorAll(".insight-card-link").forEach((link) => {
-  link.addEventListener("click", (event) => {
-    event.preventDefault();
-  });
-});
